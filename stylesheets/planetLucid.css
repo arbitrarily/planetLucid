@@ -1,0 +1,199 @@
+.header {
+    background: #aaa;
+    overflow: hidden;
+}
+.topBar.row.twelve {
+    background: #bbb;
+    padding: 20px 20px 0 20px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* Navigation */
+.nav {
+    display: inline-block;
+    min-height: 430px;
+}
+.twelve.columns.nav {
+    width: 100% !important;
+}
+.nav ul {
+    text-align: center;
+    margin-top: 18px;
+    position: relative;
+    z-index: 3;
+}
+.nav li {
+    display: inline-block;
+    padding: 0 10px;
+    margin: 0;
+}
+.subNavArt,
+.subNavDesign,
+.subNavIllustration {
+    display: none;
+    position: absolute;
+    top: 125px;
+}
+.subNavArt ul,
+.subNavDesign ul,
+.subNavIllustration ul {
+    text-align: center;
+}
+.subNavArt li,
+.subNavDesign li,
+.subNavIllustration li {
+    display: inline-block;
+}
+.subMenu {
+    z-index: 3;
+}
+
+.topBar .links.four ul {
+    display: inline-block;
+}
+.topBar .links.four ul.social li {
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    border: 1px solid #111
+}
+.topBar .links.four li {
+    display: inline-block;
+}
+.topBar .social.four li {
+    display: inline-block;
+}
+
+.links.four.columns {
+    text-align: right;
+}
+.links.four.columns ul {
+    margin-bottom: 10px;
+}
+.three.columns div.panel {
+    min-height: 15%;
+}
+
+
+.mainBody.twelve.columns .row {
+    box-sizing: border-box;
+    padding: 0 20px;
+    background: #eee;
+}
+.mainBody.twelve.columns .row:first-child {
+    padding-top: 20px;
+}
+.mainBody .row {
+    max-width: 100%;
+}
+
+.shop {
+    position:absolute;
+    padding: 0 !important;
+    margin: 0 !important;
+    bottom: 0;
+    right: 0;
+    width:100px;
+    height: 100px;
+    padding:1em 1.5em;
+    color:#fff;
+    z-index: 2;
+}
+.shop:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom: 100px solid #888;
+    border-left: 100px solid transparent;
+    display: block;
+    width: 0;
+}
+.shop p {
+    position: absolute;
+    text-align: right;
+    bottom: 15px;
+    right: 15px;
+    margin: 0;
+}
+.hexagon {
+    color: #999;
+    font-size: 45em;
+    text-align: center;
+    height: 0;
+    line-height: 0;
+    position: relative;
+    top: -30px;
+}
+
+.content.panel.twelve.columns {
+    box-sizing: border-box;
+}
+.content.panel.twelve.columns .eight.columns .panel {
+    padding: 0;
+}
+.content.panel.twelve.columns .eight.columns .panel img {
+    padding: 0;
+    margin: 0;
+    margin-bottom: -5px;
+    line-height: 0;
+}
+.content.panel.twelve.columns .four.columns {
+    margin-left: 2%;
+    width: 32%;
+}
+.content.panel.twelve.columns .four.columns p {
+    margin-right: 20px;
+}
+.previewTitle {
+    padding: 0 !important;
+    margin-bottom: 10px;
+}
+
+.closePreview {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 11px;
+    right: 5px;
+    cursor: pointer;
+    text-align: center;
+    -webkit-transition: all 0.6s ease-in-out; 
+    -moz-transition: all 0.6s ease-in-out; 
+    -o-transition: all 0.6s ease-in-out; 
+    -ms-transition: all 0.6s ease-in-out; 
+    transition: all 0.6s ease-in-out; 
+}
+.closePreview:after {
+    height: 40px;
+    width: 40px;
+    content: '✕';
+    color: #222;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2.1rem;
+    line-height: 40px;
+    -webkit-transition: all 0.6s ease-in-out; 
+    -moz-transition: all 0.6s ease-in-out; 
+    -o-transition: all 0.6s ease-in-out; 
+    -ms-transition: all 0.6s ease-in-out; 
+    transition: all 0.6s ease-in-out; 
+}
+
+#slides {
+  display: none
+}
+.slidesjs-previous.slidesjs-navigation,
+.slidesjs-next.slidesjs-navigation {
+    position: absolute;
+    bottom: 50%;
+    z-index: 10;
+}
+.slidesjs-previous.slidesjs-navigation {
+    left: 10px;
+}
+.slidesjs-next.slidesjs-navigation {
+    right: 10px;
+}
