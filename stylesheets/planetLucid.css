@@ -14,26 +14,47 @@
     display: inline-block;
     min-height: 430px;
 }
+.navFixed {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    display: none;
+    background: #ddd;
+}
 .twelve.columns.nav {
     width: 100% !important;
 }
-.nav ul {
+.nav ul,
+.navFixed ul {
     text-align: center;
     margin-top: 18px;
     position: relative;
     z-index: 3;
 }
-.nav li {
+.nav li,
+.navFixed li {
     display: inline-block;
     padding: 0 10px;
     margin: 0;
 }
+.navFixed .twelve.columns .subMenuFixed ul {
+    padding: 0;
+    margin-top: -10px;
+    margin-bottom: 18px;
+}
 .subNavArt,
 .subNavDesign,
-.subNavIllustration {
+.subNavIllustration  {
     display: none;
     position: absolute;
-    top: 125px;
+    top: 165px;
+    max-width: 100%;
+}
+.subNavArtFixed,
+.subNavDesignFixed,
+.subNavIllustrationFixed  {
+    display: none;
+    max-width: 100%;
 }
 .subNavArt ul,
 .subNavDesign ul,
@@ -45,7 +66,8 @@
 .subNavIllustration li {
     display: inline-block;
 }
-.subMenu {
+.subMenu,
+.subMenuFixed {
     z-index: 3;
 }
 
@@ -72,7 +94,7 @@
     margin-bottom: 10px;
 }
 .three.columns div.panel {
-    min-height: 15%;
+    min-height: 90px;
 }
 
 
@@ -126,9 +148,12 @@
     position: relative;
     top: -30px;
 }
-
+.sliderPanel {
+    display: none;
+}
 .content.panel.twelve.columns {
     box-sizing: border-box;
+    opacity: 0;
 }
 .content.panel.twelve.columns .eight.columns .panel {
     padding: 0;

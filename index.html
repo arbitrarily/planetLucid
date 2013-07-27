@@ -1,4 +1,4 @@
-v<!DOCTYPE html>
+<!DOCTYPE html>
 
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
@@ -41,6 +41,45 @@ v<!DOCTYPE html>
 
 		<div class="row">
 			<div class="header twelve columns">
+
+                <!--  STICKY NAVIGATION  -->
+                <div class="row navFixed">
+                    <div class="twelve columns">
+                        <ul>
+                            <li><a href="#subNavArtFixed"><h4>Art Direction</h4></a></li>
+                            <li><a href="#subNavDesignFixed"><h4>Design & UX</h4></a></li>
+                            <li><a href="#subNavIllustrationFixed"><h4>Illustration</h4></a></li>
+                        </ul>
+                        <!--  SUBMENUS  -->
+                        <div class="row subNavArtFixed subMenuFixed" id="subNavArtFixed">
+                            <div class="twelve columns">
+                                <ul>
+                                    <li><h5>Sub Item 1</h5></li>
+                                    <li><h5>Sub Item 2</h5></li>
+                                    <li><h5>Sub Item 3</h5></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row subNavDesignFixed subMenuFixed" id="subNavDesignFixed">
+                            <div class="twelve columns">
+                                <ul>
+                                    <li><h5>Sub Item 4</h5></li>
+                                    <li><h5>Sub Item 5</h5></li>
+                                    <li><h5>Sub Item 6</h5></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row subNavIllustrationFixed subMenuFixed" id="subNavIllustrationFixed">
+                            <div class="twelve columns">
+                                <ul>
+                                    <li><h5>Sub Item 7</h5></li>
+                                    <li><h5>Sub Item 8</h5></li>
+                                    <li><h5>Sub Item 9</h5></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <!--  TOP BAR  -->
                 <div class="topBar row twelve">
@@ -707,50 +746,8 @@ v<!DOCTYPE html>
 	<!-- Included JS Files -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="javascripts/jquery.slides.min.js"></script>
+    <script src="javascripts/lucid.js"></script>
 
-    <script>
-        $(function() {
-            // slideshow
-            $('#slides, #slides2').slidesjs({
-                width: 587,
-                height: 373,
-                navigation: {
-                    active: true,
-                },
-                pagination: { active: false },
-                effect: { fade: { speed: 400  } }
-            });
-            $(".content.panel.twelve.columns").hide();
-
-            // nav fade in links
-            $(".nav a").click(function(event) {
-                event.preventDefault();
-                $(".subMenu").hide();
-                var relativeID = $(this).attr('href');
-
-                $("" + relativeID).fadeToggle("slow","linear"); 
-            });
-
-            // large preview
-            $(".mainBody .three.columns a").click(function(event) {
-                event.preventDefault();
-                var relativeID = $(this).attr('href');
-
-                $(".content.panel.twelve.columns").fadeOut(function(){
-                    $("" + relativeID).fadeOut();
-                    setTimeout(function () { 
-                        $("" + relativeID).fadeIn();
-                    }, 300);
-                });
-            });
-
-            // close large preview
-            $(".closePreview").click(function() {
-                $(".content.panel.twelve.columns").slideUp("slow","linear"); 
-            });
-
-        });
-    </script>
 
 </body>
 </html>
