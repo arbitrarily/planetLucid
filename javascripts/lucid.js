@@ -41,15 +41,15 @@ $(function() {
 
     //sticky nav
     $(window).scroll(function(){
-        if ($(this).scrollTop() > 140) { 
+        if ($(this).scrollTop() > 160) { 
             $(".nav ul").fadeOut(100);
-            $(".navFixed").css('width',$('.mainBody').width() + 1).delay(100).fadeIn(200);
+            $(".navFixed").css('width',$('.mainBody').width() + 1).animate({"top": "0"}, 200);
         } else {
-            $(".navFixed").fadeOut();
+            $(".navFixed").animate({"top": "-80px"}, 100);
         }
         if ($(this).scrollTop() < 100) { 
+            $(".navFixed").removeAttr("width").animate({"top": "-80px"}, 200);
             $(".nav ul").fadeIn(100);
-            $(".navFixed").removeAttr("width").delay(100).fadeOut(200);
         }
     });
 

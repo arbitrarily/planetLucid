@@ -17,8 +17,7 @@
 .navFixed {
     position: fixed;
     z-index: 9999;
-    top: 0;
-    display: none;
+    top: -80px;
     background: #ddd;
 }
 .twelve.columns.nav {
