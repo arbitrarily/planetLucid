@@ -48,7 +48,7 @@ $(function() {
             $(".navFixed").animate({"top": "-80px"}, 100);
         }
         if ($(this).scrollTop() < 100) { 
-            $(".navFixed").removeAttr("width").animate({"top": "-80px"}, 200);
+            $(".navFixed").animate({"top": "-80px"}, 200).removeAttr("width");
             $(".nav ul").fadeIn(100);
         }
     });
