@@ -1,753 +1,234 @@
-<!DOCTYPE html>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Planet Lucid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/custom.css" rel="stylesheet" media="screen">
+    <link href="css/animations.css" rel="stylesheet" media="screen">
+		<script src="js/modernizr.custom.js"></script>
+    <!--[if lt IE 9]>
+      <link href="css/ie8.css" rel="stylesheet" media="screen">
+      <script src="js/html5shiv.js" type="text/javascript"></script>
+    <![endif]-->
+  </head>
 
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-	<meta charset="utf-8" />
+  <body>
+  	<div id="pt-main">
 
-	<!-- Set the viewport width to device width for mobile -->
-	<meta name="viewport" content="width=device-width" />
+      <header class="row-fluid navFixed">
+        <div class="container">
+          <div class="span8 relative">
+            <h1>Planet Lucid</h1>
+          </div>
+          <div class="span4">
+            <ul class="social-bar-white subMenuFixed">
+              <li><a class="facebook-white" href="#" title="Facebook" target="_blank"></a></li>
+              <li><a class="twitter-white" href="#" title="Twitter" target="_blank"></a></li>
+              <li><a class="linkedin-white" href="#" title="LinkedIn" target="_blank"></a></li>
+              <li><a class="behance-white" href="#" title="Behance" target="_blank"></a></li>
+              <li><a class="dribbble-white" href="#" title="Dribbble" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div>
+      </header>             
 
-	<title>Planet Lucid</title>
-  
-	<!-- Included CSS Files -->
-	<!-- Combine and Compress These CSS Files -->
-	<link rel="stylesheet" href="stylesheets/globals.css">
-	<link rel="stylesheet" href="stylesheets/typography.css">
-	<link rel="stylesheet" href="stylesheets/grid.css">
-	<link rel="stylesheet" href="stylesheets/ui.css">
-    <link rel="stylesheet" href="stylesheets/planetLucid.css">
-    <link rel="stylesheet" href="stylesheets/mobile.css">
+      <article class="pt-page pt-page-0 bg-image1" id="works">
+        <div class="outer-wrapper overlay-blue">
+          
+          <header class="row-fluid">
+            <div class="container">
+              <div class="span8 relative">
+                <h1>Planet Lucid</h1>
+              </div>
+              <div class="span4">
+                <ul class="social-bar-white">
+                  <li><a class="facebook-white" href="#" title="Facebook" target="_blank"></a></li>
+                  <li><a class="twitter-white" href="#" title="Twitter" target="_blank"></a></li>
+                  <li><a class="linkedin-white" href="#" title="LinkedIn" target="_blank"></a></li>
+                  <li><a class="behance-white" href="#" title="Behance" target="_blank"></a></li>
+                  <li><a class="dribbble-white" href="#" title="Dribbble" target="_blank"></a></li>
+                </ul>
+              </div>
+            </div>
+          </header>
+          
+          <section class="row-fluid">
+            <div class="container navigation">
+              <div class="navBG"></div>
+              <div class="span12">
+                  <ul>
+                    <li><a href="#subNavArt"><h4>Art Direction</h4></a></li>
+                    <li><a href="#subNavDesign"><h4>Design & UX</h4></a></li>
+                    <li><a href="#subNavIllustration"><h4>Illustration</h4></a></li>
+                  </ul>
 
-	<!--[if lt IE 9]>
-		<link rel="stylesheet" href="stylesheets/ie.css">
-	<![endif]-->
-	
-	<script src="javascripts/modernizr.foundation.js"></script>
+                  <!--  SUBMENUS  -->
+                  <div class="subNavArt subMenu" id="subNavArt">
+                    <ul>
+                      <li><h5>Sub Item 1</h5></li>
+                      <li><h5>Sub Item 2</h5></li>
+                      <li><h5>Sub Item 3</h5></li>
+                    </ul>
+                  </div>
+                  <div class="subNavDesign subMenu" id="subNavDesign">
+                    <ul>
+                      <li><h5>Sub Item 4</h5></li>
+                      <li><h5>Sub Item 5</h5></li>
+                      <li><h5>Sub Item 6</h5></li>
+                    </ul>
+                  </div>
+                  <div class="subNavIllustration subMenu" id="subNavIllustration">
+                    <ul>
+                      <li><h5>Sub Item 7</h5></li>
+                      <li><h5>Sub Item 8</h5></li>
+                      <li><h5>Sub Item 9</h5></li>
+                    </ul>
+                  </div>
 
-	<!-- IE Fix for HTML5 Tags -->
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-</head>
-<body>
-
-	<!-- container -->
-	<div class="container">
-
-		<div class="row">
-			<div class="header twelve columns">
-
-                <!--  STICKY NAVIGATION  -->
-                <div class="row navFixed">
-                    <div class="twelve columns">
-                        <ul>
-                            <li><a href="#subNavArtFixed"><h4>Art Direction</h4></a></li>
-                            <li><a href="#subNavDesignFixed"><h4>Design & UX</h4></a></li>
-                            <li><a href="#subNavIllustrationFixed"><h4>Illustration</h4></a></li>
-                        </ul>
-                        <!--  SUBMENUS  -->
-                        <div class="row subNavArtFixed subMenuFixed" id="subNavArtFixed">
-                            <div class="twelve columns">
-                                <ul>
-                                    <li><h5>Sub Item 1</h5></li>
-                                    <li><h5>Sub Item 2</h5></li>
-                                    <li><h5>Sub Item 3</h5></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row subNavDesignFixed subMenuFixed" id="subNavDesignFixed">
-                            <div class="twelve columns">
-                                <ul>
-                                    <li><h5>Sub Item 4</h5></li>
-                                    <li><h5>Sub Item 5</h5></li>
-                                    <li><h5>Sub Item 6</h5></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row subNavIllustrationFixed subMenuFixed" id="subNavIllustrationFixed">
-                            <div class="twelve columns">
-                                <ul>
-                                    <li><h5>Sub Item 7</h5></li>
-                                    <li><h5>Sub Item 8</h5></li>
-                                    <li><h5>Sub Item 9</h5></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--  TOP BAR  -->
-                <div class="topBar row twelve">
-                    <div class="eight columns">
-                        <h4>Hello Lorem ipsum dolor sit amet.</h4>
-                    </div>
-                    <div class="links four columns">
-                        <ul class="rightLinks">
-                            <li>About</li>
-                            <li>Contact</li>
-                        </ul>
-                        <ul class="social">
-                            <li>dr</li>
-                            <li>t</li>
-                            <li>f</li>
-                            <li>in</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!--  NAVIGATION  -->
-                <div class="row">
-                    <div class="twelve columns nav">
-                        <ul>
-                            <li><a href="#subNavArt"><h4>Art Direction</h4></a></li>
-                            <li><a href="#subNavDesign"><h4>Design & UX</h4></a></li>
-                            <li><a href="#subNavIllustration"><h4>Illustration</h4></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!--  SUBMENUS  -->
-                <div class="row subNavArt subMenu" id="subNavArt">
-                    <div class="twelve columns">
-                        <ul>
-                            <li><h5>Sub Item 1</h5></li>
-                            <li><h5>Sub Item 2</h5></li>
-                            <li><h5>Sub Item 3</h5></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row subNavDesign subMenu" id="subNavDesign">
-                    <div class="twelve columns">
-                        <ul>
-                            <li><h5>Sub Item 4</h5></li>
-                            <li><h5>Sub Item 5</h5></li>
-                            <li><h5>Sub Item 6</h5></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row subNavIllustration subMenu" id="subNavIllustration">
-                    <div class="twelve columns">
-                        <ul>
-                            <li><h5>Sub Item 7</h5></li>
-                            <li><h5>Sub Item 8</h5></li>
-                            <li><h5>Sub Item 9</h5></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="shop">
+                  <div class="shop">
                     <p>Shop</p>
-                </div>
+                  </div>
 
-                <!--  HEXAGON  -->
-                <div class="hexagon">&#x2B22;</div>
+                  <!--  HEXAGON  -->
+                  <div class="hexagon">&#x2B22;</div>
 
-			</div>
-		</div>
+              </div>
+            </div>
+            <div class="container">
+              <ul class="og-grid">
+                <li>
+                  <a href="#" data-largesrc="img/works/w1_b.jpg" data-title="Duis Sid Amet" data-category="Web Design" data-client="Brand" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.">
+                    <span class="figcap"></span>
+                    <img src="img/works/w1_s.jpg" alt="Duis Sid Amet"/>
+                    <h2>Duis Sid Amet</h2>
+                    <h3>Web design</h3>
+                    <span class="arrow"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-largesrc="img/works/w2_b.jpg" data-title="Etiam Placerat" data-category="Graphic design" data-client="Brand" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.">
+                    <span class="figcap"></span>
+                    <img src="img/works/w2_s.jpg" alt="Etiam Placerat"/>
+                    <h2>Etiam Placerat</h2>
+                    <h3>Graphic design</h3>
+                    <span class="arrow"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-largesrc="img/works/w2_b.jpg" data-title="Etiam Placerat" data-category="Graphic design" data-client="Brand" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.">
+                    <span class="figcap"></span>
+                    <img src="img/works/w2_s.jpg" alt="Etiam Placerat"/>
+                    <h2>Etiam Placerat</h2>
+                    <h3>Graphic design</h3>
+                    <span class="arrow"></span>
+                  </a>
+                </li>
+                <li class="last">
+                  <a href="#" data-largesrc="img/works/w3_b.jpg" data-title="Egestas Ornare" data-category="Other" data-client="Brand" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.">
+                    <span class="figcap"></span>
+                    <img src="img/works/w3_s.jpg" alt="Egestas Ornare"/>
+                    <h2>Egestas Ornare</h2>
+                    <h3>Other</h3>
+                    <span class="arrow"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-largesrc="img/works/w4_b.jpg" data-title="Degnissim" data-category="Graphic design" data-client="Brand" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.">
+                    <span class="figcap"></span>
+                    <img src="img/works/w4_s.jpg" alt="Degnissim"/>
+                    <h2>Degnissim</h2>
+                    <h3>Graphic design</h3>
+                    <span class="arrow"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-largesrc="img/works/w5_b.jpg" data-title="Eget Justo" data-category="Web design" data-client="Brand" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.">
+                    <span class="figcap"></span>
+                    <img src="img/works/w5_s.jpg" alt="Eget Justo"/>
+                    <h2>Eget Justo</h2>
+                    <h3>Web design</h3>
+                    <span class="arrow"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-largesrc="img/works/w5_b.jpg" data-title="Eget Justo" data-category="Web design" data-client="Brand" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.">
+                    <span class="figcap"></span>
+                    <img src="img/works/w5_s.jpg" alt="Eget Justo"/>
+                    <h2>Eget Justo</h2>
+                    <h3>Web design</h3>
+                    <span class="arrow"></span>
+                  </a>
+                </li>
+                <li class="last">
+                  <a href="#" data-largesrc="img/works/w6_b.jpg" data-title="Bibendum" data-category="Other" data-client="Brand" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.">
+                    <span class="figcap"></span>
+                    <img src="img/works/w6_s.jpg" alt="Bibendum"/>
+                    <h2>Bibendum</h2>
+                    <h3>Other</h3>
+                    <span class="arrow"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
 
-		<div class="row">
-			<div class="mainBody twelve columns">
+          <header class="row-fluid">
+            <div class="container">
+              <div class="span8 relative">
+                <h1>Contact</h1>
+              </div>
+            </div>
+          </header>
+          
+          <section class="row-fluid">
+            <div class="container">
+              <form method="post" name="feedback-form" id="feedback-form" class="clearfix">
+                <fieldset class="span6">
+                  <span id="sprytextfield1">
+                    <input type="text" name="name" id="name">
+                  </span>
+                  <span id="sprytextfield2">
+                    <input type="text" name="email" id="email">
+                  </span>
+                </fieldset>
+                <fieldset class="span6">
+                  <span id="sprytextarea1">
+                    <textarea name="message" id="message" cols="45" rows="5"></textarea>
+                  </span>
+                </fieldset>
+                <input name="submit" type="submit" class="submit" id="submit" value="Submit">
+                <div id="success"></div>
+              </form>
+            </div>
+          </section>
 
-                <!--  ROW ONE THUMBNAILS  -->
-				<div class="row">
-					<div class="three columns">
-                        <a href="#work1">
-                            <div class="panel">
-                                <p>pizza</p>
-                            </div>
-                        </a>
-					</div>
-					<div class="three columns">
-                        <a href="#work2">
-                            <div class="panel">
-                                <p>pizza</p>
-                            </div>
-                        </a>
-					</div>
-                    <div class="three columns">
-                        <a href="#work3">
-                            <div class="panel">
-                                <p>pizza</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="three columns">
-                        <a href="#work4">
-                            <div class="panel">
-                                <p>pizza</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                    <!--  WORK ONE PIECE  -->
-                    <div class="row">
-                        <div class="content panel twelve columns" id="work1">
-                            <div class="eight columns">
-                                <div class="panel">
-                                    <div id="slides">
-                                        <img src="http://placekitten.com/g/700/503" />
-                                        <img src="http://placekitten.com/g/700/500" />
-                                        <img src="http://placekitten.com/g/700/502" />
-                                        <img src="http://placekitten.com/g/700/501" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="closePreview"></div>
-                            <div class="four columns">
-                                <div class="previewTitle">
-                                    <h4>Title Here</h4>
-                                </div>
-                                <p>
-                                    Description - Lorem ipsum dolor sit 
-                                    amet, consectetur adipisicing elit, sed 
-                                    do eiusmod tempor incididunt ut labore 
-                                    et dolore magna aliqua. Ut enim ad 
-                                    minim veniam, quis nostrud exercitation 
-                                    ullamco laboris nisi ut aliquip ex ea 
-                                    commodo consequat. Duis aute irure 
-                                    dolor in reprehenderit in voluptate velit 
-                                    esse cillum dolore eu fugiat nulla 
-                                    pariatur. Excepteur sint occaecat 
-                                    cupidatat non proident, sunt in culpa 
-                                    qui officia deserunt mollit anim id 
-                                    est laborum
-                                </p>
-                            </div>
-                            <div class="shop">
-                                <p>Shop</p>
-                            </div>
-                        </div>
-    				</div>
-
-                    <!--  WORK TWO PIECE  -->
-                    <div class="row">
-                        <div class="content panel twelve columns" id="work2">
-                            <div class="eight columns">
-                                <div class="panel">
-                                    <div id="slides">
-                                        <img src="http://placekitten.com/g/700/503" />
-                                        <img src="http://placekitten.com/g/700/500" />
-                                        <img src="http://placekitten.com/g/700/502" />
-                                        <img src="http://placekitten.com/g/700/501" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="closePreview"></div>
-                            <div class="four columns">
-                                <div class="previewTitle">
-                                    <h4>Title Here</h4>
-                                </div>
-                                <p>
-                                    Description - Lorem ipsum dolor sit 
-                                    amet, consectetur adipisicing elit, sed 
-                                    do eiusmod tempor incididunt ut labore 
-                                    et dolore magna aliqua. Ut enim ad 
-                                    minim veniam, quis nostrud exercitation 
-                                    ullamco laboris nisi ut aliquip ex ea 
-                                    commodo consequat. Duis aute irure 
-                                    dolor in reprehenderit in voluptate velit 
-                                    esse cillum dolore eu fugiat nulla 
-                                    pariatur. Excepteur sint occaecat 
-                                    cupidatat non proident, sunt in culpa 
-                                    qui officia deserunt mollit anim id 
-                                    est laborum
-                                </p>
-                            </div>
-                            <div class="shop">
-                                <p>Shop</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--  WORK THREE PIECE  -->
-                    <div class="row">
-                        <div class="content panel twelve columns" id="work3">
-                            <div class="eight columns">
-                                <div class="panel">
-                                    <div id="slides">
-                                        <img src="http://placekitten.com/g/700/503" />
-                                        <img src="http://placekitten.com/g/700/500" />
-                                        <img src="http://placekitten.com/g/700/502" />
-                                        <img src="http://placekitten.com/g/700/501" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="closePreview"></div>
-                            <div class="four columns">
-                                <div class="previewTitle">
-                                    <h4>Title Here</h4>
-                                </div>
-                                <p>
-                                    Description - Lorem ipsum dolor sit 
-                                    amet, consectetur adipisicing elit, sed 
-                                    do eiusmod tempor incididunt ut labore 
-                                    et dolore magna aliqua. Ut enim ad 
-                                    minim veniam, quis nostrud exercitation 
-                                    ullamco laboris nisi ut aliquip ex ea 
-                                    commodo consequat. Duis aute irure 
-                                    dolor in reprehenderit in voluptate velit 
-                                    esse cillum dolore eu fugiat nulla 
-                                    pariatur. Excepteur sint occaecat 
-                                    cupidatat non proident, sunt in culpa 
-                                    qui officia deserunt mollit anim id 
-                                    est laborum
-                                </p>
-                            </div>
-                            <div class="shop">
-                                <p>Shop</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--  WORK FOUR PIECE  -->
-                    <div class="row">
-                        <div class="content panel twelve columns" id="work4">
-                            <div class="eight columns">
-                                <div class="panel">
-                                    <div id="slides">
-                                        <img src="http://placekitten.com/g/700/503" />
-                                        <img src="http://placekitten.com/g/700/500" />
-                                        <img src="http://placekitten.com/g/700/502" />
-                                        <img src="http://placekitten.com/g/700/501" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="closePreview"></div>
-                            <div class="four columns">
-                                <div class="previewTitle">
-                                    <h4>Title Here</h4>
-                                </div>
-                                <p>
-                                    Description - Lorem ipsum dolor sit 
-                                    amet, consectetur adipisicing elit, sed 
-                                    do eiusmod tempor incididunt ut labore 
-                                    et dolore magna aliqua. Ut enim ad 
-                                    minim veniam, quis nostrud exercitation 
-                                    ullamco laboris nisi ut aliquip ex ea 
-                                    commodo consequat. Duis aute irure 
-                                    dolor in reprehenderit in voluptate velit 
-                                    esse cillum dolore eu fugiat nulla 
-                                    pariatur. Excepteur sint occaecat 
-                                    cupidatat non proident, sunt in culpa 
-                                    qui officia deserunt mollit anim id 
-                                    est laborum
-                                </p>
-                            </div>
-                            <div class="shop">
-                                <p>Shop</p>
-                            </div>
-                        </div>
-                    </div>
-
-                <!--  ROW TWO THUMBNAILS  -->
-                <div class="row">
-                    <div class="three columns">
-                        <a href="#work5">
-                            <div class="panel">
-                                <p>pizza</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="three columns">
-                        <a href="#work6">
-                            <div class="panel">
-                                <p>pizza</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="three columns">
-                        <a href="#work7">
-                            <div class="panel">
-                                <p>pizza</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="three columns">
-                        <a href="#work8">
-                            <div class="panel">
-                                <p>pizza</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                    <!--  WORK ONE PIECE  -->
-                    <div class="row">
-                        <div class="content panel twelve columns" id="work5">
-                            <div class="eight columns">
-                                <div class="panel">
-                                    <div id="slides">
-                                        <img src="http://placekitten.com/g/700/503" />
-                                        <img src="http://placekitten.com/g/700/500" />
-                                        <img src="http://placekitten.com/g/700/502" />
-                                        <img src="http://placekitten.com/g/700/501" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="closePreview"></div>
-                            <div class="four columns">
-                                <div class="previewTitle">
-                                    <h4>Title Here</h4>
-                                </div>
-                                <p>
-                                    Description - Lorem ipsum dolor sit 
-                                    amet, consectetur adipisicing elit, sed 
-                                    do eiusmod tempor incididunt ut labore 
-                                    et dolore magna aliqua. Ut enim ad 
-                                    minim veniam, quis nostrud exercitation 
-                                    ullamco laboris nisi ut aliquip ex ea 
-                                    commodo consequat. Duis aute irure 
-                                    dolor in reprehenderit in voluptate velit 
-                                    esse cillum dolore eu fugiat nulla 
-                                    pariatur. Excepteur sint occaecat 
-                                    cupidatat non proident, sunt in culpa 
-                                    qui officia deserunt mollit anim id 
-                                    est laborum
-                                </p>
-                            </div>
-                            <div class="shop">
-                                <p>Shop</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--  WORK TWO PIECE  -->
-                    <div class="row">
-                        <div class="content panel twelve columns" id="work6">
-                            <div class="eight columns">
-                                <div class="panel">
-                                    <div id="slides">
-                                        <img src="http://placekitten.com/g/700/503" />
-                                        <img src="http://placekitten.com/g/700/500" />
-                                        <img src="http://placekitten.com/g/700/502" />
-                                        <img src="http://placekitten.com/g/700/501" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="closePreview"></div>
-                            <div class="four columns">
-                                <div class="previewTitle">
-                                    <h4>Title Here</h4>
-                                </div>
-                                <p>
-                                    Description - Lorem ipsum dolor sit 
-                                    amet, consectetur adipisicing elit, sed 
-                                    do eiusmod tempor incididunt ut labore 
-                                    et dolore magna aliqua. Ut enim ad 
-                                    minim veniam, quis nostrud exercitation 
-                                    ullamco laboris nisi ut aliquip ex ea 
-                                    commodo consequat. Duis aute irure 
-                                    dolor in reprehenderit in voluptate velit 
-                                    esse cillum dolore eu fugiat nulla 
-                                    pariatur. Excepteur sint occaecat 
-                                    cupidatat non proident, sunt in culpa 
-                                    qui officia deserunt mollit anim id 
-                                    est laborum
-                                </p>
-                            </div>
-                            <div class="shop">
-                                <p>Shop</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--  WORK THREE PIECE  -->
-                    <div class="row">
-                        <div class="content panel twelve columns" id="work7">
-                            <div class="eight columns">
-                                <div class="panel">
-                                    <div id="slides">
-                                        <img src="http://placekitten.com/g/700/503" />
-                                        <img src="http://placekitten.com/g/700/500" />
-                                        <img src="http://placekitten.com/g/700/502" />
-                                        <img src="http://placekitten.com/g/700/501" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="closePreview"></div>
-                            <div class="four columns">
-                                <div class="previewTitle">
-                                    <h4>Title Here</h4>
-                                </div>
-                                <p>
-                                    Description - Lorem ipsum dolor sit 
-                                    amet, consectetur adipisicing elit, sed 
-                                    do eiusmod tempor incididunt ut labore 
-                                    et dolore magna aliqua. Ut enim ad 
-                                    minim veniam, quis nostrud exercitation 
-                                    ullamco laboris nisi ut aliquip ex ea 
-                                    commodo consequat. Duis aute irure 
-                                    dolor in reprehenderit in voluptate velit 
-                                    esse cillum dolore eu fugiat nulla 
-                                    pariatur. Excepteur sint occaecat 
-                                    cupidatat non proident, sunt in culpa 
-                                    qui officia deserunt mollit anim id 
-                                    est laborum
-                                </p>
-                            </div>
-                            <div class="shop">
-                                <p>Shop</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--  WORK FOUR PIECE  -->
-                    <div class="row">
-                        <div class="content panel twelve columns" id="work8">
-                            <div class="eight columns">
-                                <div class="panel">
-                                    <div id="slides">
-                                        <img src="http://placekitten.com/g/700/503" />
-                                        <img src="http://placekitten.com/g/700/500" />
-                                        <img src="http://placekitten.com/g/700/502" />
-                                        <img src="http://placekitten.com/g/700/501" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="closePreview"></div>
-                            <div class="four columns">
-                                <div class="previewTitle">
-                                    <h4>Title Here</h4>
-                                </div>
-                                <p>
-                                    Description - Lorem ipsum dolor sit 
-                                    amet, consectetur adipisicing elit, sed 
-                                    do eiusmod tempor incididunt ut labore 
-                                    et dolore magna aliqua. Ut enim ad 
-                                    minim veniam, quis nostrud exercitation 
-                                    ullamco laboris nisi ut aliquip ex ea 
-                                    commodo consequat. Duis aute irure 
-                                    dolor in reprehenderit in voluptate velit 
-                                    esse cillum dolore eu fugiat nulla 
-                                    pariatur. Excepteur sint occaecat 
-                                    cupidatat non proident, sunt in culpa 
-                                    qui officia deserunt mollit anim id 
-                                    est laborum
-                                </p>
-                            </div>
-                            <div class="shop">
-                                <p>Shop</p>
-                            </div>
-                        </div>
-                    </div>
-
-                <!--  ROW THREE THUMBNAILS  -->
-                <div class="row">
-                    <div class="three columns">
-                        <a href="#work9">
-                            <div class="panel">
-                                <p>pizza</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="three columns">
-                        <a href="#work10">
-                            <div class="panel">
-                                <p>pizza</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="three columns">
-                        <a href="#work11">
-                            <div class="panel">
-                                <p>pizza</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="three columns">
-                        <a href="#work12">
-                            <div class="panel">
-                                <p>pizza</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                    <!--  WORK ONE PIECE  -->
-                    <div class="row">
-                        <div class="content panel twelve columns" id="work9">
-                            <div class="eight columns">
-                                <div class="panel">
-                                    <div id="slides">
-                                        <img src="http://placekitten.com/g/700/503" />
-                                        <img src="http://placekitten.com/g/700/500" />
-                                        <img src="http://placekitten.com/g/700/502" />
-                                        <img src="http://placekitten.com/g/700/501" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="closePreview"></div>
-                            <div class="four columns">
-                                <div class="previewTitle">
-                                    <h4>Title Here</h4>
-                                </div>
-                                <p>
-                                    Description - Lorem ipsum dolor sit 
-                                    amet, consectetur adipisicing elit, sed 
-                                    do eiusmod tempor incididunt ut labore 
-                                    et dolore magna aliqua. Ut enim ad 
-                                    minim veniam, quis nostrud exercitation 
-                                    ullamco laboris nisi ut aliquip ex ea 
-                                    commodo consequat. Duis aute irure 
-                                    dolor in reprehenderit in voluptate velit 
-                                    esse cillum dolore eu fugiat nulla 
-                                    pariatur. Excepteur sint occaecat 
-                                    cupidatat non proident, sunt in culpa 
-                                    qui officia deserunt mollit anim id 
-                                    est laborum
-                                </p>
-                            </div>
-                            <div class="shop">
-                                <p>Shop</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--  WORK TWO PIECE  -->
-                    <div class="row">
-                        <div class="content panel twelve columns" id="work10">
-                            <div class="eight columns">
-                                <div class="panel">
-                                    <div id="slides">
-                                        <img src="http://placekitten.com/g/700/503" />
-                                        <img src="http://placekitten.com/g/700/500" />
-                                        <img src="http://placekitten.com/g/700/502" />
-                                        <img src="http://placekitten.com/g/700/501" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="closePreview"></div>
-                            <div class="four columns">
-                                <div class="previewTitle">
-                                    <h4>Title Here</h4>
-                                </div>
-                                <p>
-                                    Description - Lorem ipsum dolor sit 
-                                    amet, consectetur adipisicing elit, sed 
-                                    do eiusmod tempor incididunt ut labore 
-                                    et dolore magna aliqua. Ut enim ad 
-                                    minim veniam, quis nostrud exercitation 
-                                    ullamco laboris nisi ut aliquip ex ea 
-                                    commodo consequat. Duis aute irure 
-                                    dolor in reprehenderit in voluptate velit 
-                                    esse cillum dolore eu fugiat nulla 
-                                    pariatur. Excepteur sint occaecat 
-                                    cupidatat non proident, sunt in culpa 
-                                    qui officia deserunt mollit anim id 
-                                    est laborum
-                                </p>
-                            </div>
-                            <div class="shop">
-                                <p>Shop</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--  WORK THREE PIECE  -->
-                    <div class="row">
-                        <div class="content panel twelve columns" id="work11">
-                            <div class="eight columns">
-                                <div class="panel">
-                                    <div id="slides">
-                                        <img src="http://placekitten.com/g/700/503" />
-                                        <img src="http://placekitten.com/g/700/500" />
-                                        <img src="http://placekitten.com/g/700/502" />
-                                        <img src="http://placekitten.com/g/700/501" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="closePreview"></div>
-                            <div class="four columns">
-                                <div class="previewTitle">
-                                    <h4>Title Here</h4>
-                                </div>
-                                <p>
-                                    Description - Lorem ipsum dolor sit 
-                                    amet, consectetur adipisicing elit, sed 
-                                    do eiusmod tempor incididunt ut labore 
-                                    et dolore magna aliqua. Ut enim ad 
-                                    minim veniam, quis nostrud exercitation 
-                                    ullamco laboris nisi ut aliquip ex ea 
-                                    commodo consequat. Duis aute irure 
-                                    dolor in reprehenderit in voluptate velit 
-                                    esse cillum dolore eu fugiat nulla 
-                                    pariatur. Excepteur sint occaecat 
-                                    cupidatat non proident, sunt in culpa 
-                                    qui officia deserunt mollit anim id 
-                                    est laborum
-                                </p>
-                            </div>
-                            <div class="shop">
-                                <p>Shop</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--  WORK FOUR PIECE  -->
-                    <div class="row">
-                        <div class="content panel twelve columns" id="work12">
-                            <div class="eight columns">
-                                <div class="panel">
-                                    <div id="slides">
-                                        <img src="http://placekitten.com/g/700/503" />
-                                        <img src="http://placekitten.com/g/700/500" />
-                                        <img src="http://placekitten.com/g/700/502" />
-                                        <img src="http://placekitten.com/g/700/501" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="closePreview"></div>
-                            <div class="four columns">
-                                <div class="previewTitle">
-                                    <h4>Title Here</h4>
-                                </div>
-                                <p>
-                                    Description - Lorem ipsum dolor sit 
-                                    amet, consectetur adipisicing elit, sed 
-                                    do eiusmod tempor incididunt ut labore 
-                                    et dolore magna aliqua. Ut enim ad 
-                                    minim veniam, quis nostrud exercitation 
-                                    ullamco laboris nisi ut aliquip ex ea 
-                                    commodo consequat. Duis aute irure 
-                                    dolor in reprehenderit in voluptate velit 
-                                    esse cillum dolore eu fugiat nulla 
-                                    pariatur. Excepteur sint occaecat 
-                                    cupidatat non proident, sunt in culpa 
-                                    qui officia deserunt mollit anim id 
-                                    est laborum
-                                </p>
-                            </div>
-                            <div class="shop">
-                                <p>Shop</p>
-                            </div>
-                        </div>
-                    </div>
-
-                <!--  GO BACK TOP FOOTER  -->
-                <div class="row">
-                    <div class="three columns">
-                        <p>Back Top</p>
-                    </div>
-                    <div class="nine columns"></div>
-                </div>
-
-			</div>
-		</div>
-
-	</div>
-	<!-- container -->
-
-	<!-- Included JS Files -->
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="javascripts/jquery.slides.min.js"></script>
-    <script src="javascripts/lucid.js"></script>
-
-
-</body>
+          <div class="push"><!--//--></div>
+        </div>
+        
+        <footer>
+          <div class="container">
+            <p>Copyright &copy; PlanetLucid, 2012-2013</p>
+          </div>
+        </footer>
+      </article>
+                 
+    <script src="js/jquery.js"></script>
+    <script src="js/pagetransitions.js" type="text/javascript"></script>
+    <script src="js/validation.js" type="text/javascript"></script>
+    <script src="js/grid.js"></script>
+    <script src="js/scripts.js"></script>
+      
+    
+    <script type="text/javascript">
+      var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "none", {hint:"Your Name *", validateOn:["change"]});
+      var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "email", {hint:"Your Email *", validateOn:["change"]});
+      var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3", "none", {hint:"Your Name *", validateOn:["change"]});
+      var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4", "email", {hint:"Your Email *", validateOn:["change"]});
+      var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1", {hint:"Any comment *", validateOn:["change"]});
+      var sprytextarea2 = new Spry.Widget.ValidationTextarea("sprytextarea2", {hint:"Any comment *", validateOn:["change"]});
+    </script>
+  </body>
 </html>

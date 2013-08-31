@@ -1,0 +1,8 @@
+/* IE8 CSS Styles */
+.overlay-blue {
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+}
+.overlay-blue {
+	background-color: #0e9ec7;
+}
