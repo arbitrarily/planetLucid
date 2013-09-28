@@ -6,12 +6,17 @@ Changes
 ---
 
 • Used a friendly script for sliding previews.
-• Broke the slideshow, need to redo this.
+• Removed the slideshow, need to redo this.
 • Dropped Foundation, went Bootstrap.
 • Added functioning contact form.
 • Removed wrapper background color, using full width
 • Added Titles and Subcategories on Cards
 • Use of transparencies to reveal colors hehind
+• Fixed sticky  nav
+• Dribbble social icon added
+• Hexagon section fixes and responsive fixes
+• Sticky Nav now has the submenu
+• Custom Responsive Fixes added
 
 
 Notes

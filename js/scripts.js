@@ -24,35 +24,33 @@ $(document).ready(function() {
 		return false;
 	});
 
-    // Nav fade in links
-    $(".nav a").click(function(event) {
+    // Aobe hexagon fade in links
+    $(".container.navigation a").click(function(event) {
         event.preventDefault();
-        $(".subMenu").hide();
+        $(".navigation .subMenu").hide();
         var relativeID = $(this).attr('href');
+        $(".hexagon h2").toggleClass('rotated');
 
         $("" + relativeID).fadeToggle("slow","linear"); 
     });
 
     // Nav fixed fade in links
-    $(".container.navigation li a").click(function(event) {
+    $(".navFixed .navCategories li a").click(function(event) {
         event.preventDefault();
-        $(".subMenu").fadeOut("fast","linear");
+        $(".navFixed .navCategories .subMenu").hide();
         var relativeID = $(this).attr('href');
 
-        $("" + relativeID).fadeToggle("slow","linear"); 
+        $("" + relativeID).fadeToggle("slow","linear");
     });
 
     //Sticky Nav
-    $(window).scroll(function(){
-        if ($(this).scrollTop() > 160) { 
-			$(".navFixed").animate({"top": "0"}, 100);
-        } else {
-            $(".navFixed").animate({"top": "-300px"}, 100);
+    $('.pt-page').bind("scroll", function() {
+        if ($('.pt-page').scrollTop() > 280) {
+            $(".navFixed").stop(true, false).animate({top: "0px"}, 300);
         }
-        if ($(this).scrollTop() < 100) { 
-            $(".navFixed").animate({"top": "-300px"}, 200);
+        else {
+            $(".navFixed").stop(true, false).animate({top: "-300px"}, 400);
         }
     });
 
 });
-
